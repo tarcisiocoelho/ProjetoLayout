@@ -1,0 +1,75 @@
+
+/* Resetando os efeitos padrao do navegador */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Aplicando efeito background rotacionado */
+.boxBackground{
+   background: gray;
+   padding: 150px 0;
+   transform: skew(0deg, 4.5deg) translateY(-100px);
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Transformando a caixa de texto em dua rotaçao normal */
+.boxTexto{
+    transform: skew(0deg, -4.5deg);
+    text-align: center;
+    padding: 15px;
+}
+
+.boxTexto P{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.boxTexto h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.boxTexto span{
+    font-size: 12px;
+}
+
+.boxBotao{
+    position: relative;
+    margin-top: -200px;
+    text-align: center;
+}
+
+.boxBotao button{
+    padding: 10px;
+    margin: 15px;
+    width: 160px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 4px 4px 4px 4px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: #888888;
+}
+
+/* Aplicando responsividade quando a tela atingir a capacidade de 768px */
+
+@media (max-width: 768px)
+{
+    .boxBackground{
+        background: gray;
+        padding: 150px 0;
+        transform: skew(0deg, 13deg) translateY(-100px);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+    .boxTexto{
+        transform: skew(0deg, -13deg);
+        text-align: left;
+        padding: 15px;
+    }
+}
