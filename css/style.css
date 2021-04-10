@@ -1,5 +1,5 @@
 
-/* Resetando os efeitos padrao do navegador */
+/* Resetando o efeito padrão do navegador */
 *{
     padding: 0;
     margin: 0;
@@ -15,7 +15,7 @@
    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Transformando a caixa de texto em dua rotaçao normal */
+/* Transformando a caixa de texto em sua rotação normal */
 .boxTexto{
     transform: skew(0deg, -4.5deg);
     text-align: center;
