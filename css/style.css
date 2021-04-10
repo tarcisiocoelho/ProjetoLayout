@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Aplicando efeito background rotacionado */
@@ -12,7 +13,6 @@
    padding: 150px 0;
    transform: skew(0deg, 4.5deg) translateY(-100px);
    color: white;
-   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Transformando a caixa de texto em sua rotação normal */
@@ -47,7 +47,6 @@
     margin: 15px;
     width: 160px;
     height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     border: 1px solid;
     border-radius: 4px 4px 4px 4px;
@@ -58,7 +57,6 @@
 /* Códigos do segundo bloco */
 
 .boxInformacao{
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -132,25 +130,84 @@
     border-right: none;
     display: block;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .boxLinha fieldset legend{
     padding: 5px 10px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #888888;
 }
 
+.boxProdutos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxProdutos .boxItens{
+    margin: 15px;
+    padding: 15px;
+    height: auto;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxProdutos .boxItens p{
+    color: #888888;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.boxProdutos .boxItens #tituloProduto{
+    color: #888888;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.boxProdutos .boxItens span{
+    color: #888888;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.boxProdutos .boxItens button{
+    width: 100%;
+    padding: 10px;
+    color: #888888;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+}
+
+.boxLinha .botaoCarregarMais{
+    text-align: center;
+}
+
+.boxLinha .botaoCarregarMais button{
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 80px;
+    color: #888888;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
 /* Aplicando responsividade quando a tela atingir a capacidade de 768px */
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px){
     .boxBackground{
         background: gray;
         padding: 150px 0;
         transform: skew(0deg, 13deg) translateY(-100px);
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
      }
 
      .boxLinha{
@@ -165,10 +222,8 @@
     }
 }
 
-@media (max-width: 900px)
-{
+@media (max-width: 900px){
     .boxInformacao{
-        font-family: Arial, Helvetica, sans-serif;
         display: inline;
         flex-wrap: wrap;
         position: relative;
@@ -183,5 +238,50 @@
 
     .boxFormulario{
         width: 100%;
+    }
+
+    .boxProdutos{
+        display: inline;
+    }
+
+    .boxProdutos .boxItens{
+        display: flex;
+        margin: 0px;
+        height: auto;
+        width: auto;
+        margin-bottom: 35px;
+    }
+
+    .boxProdutos .boxItens div{
+        width: 100%;
+        display: inline;
+        color: #888888;
+        padding: 10px;
+        margin: 3px;
+    }
+
+    .boxLinha{
+        padding: 0px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .descricaoProduto #ocultarTexto{
+        visibility: hidden;
+    }
+
+    .descricaoProduto p{
+        line-height: 0.3em;
+    }
+}
+
+@media (max-width: 300px){
+    .descricaoProduto #ocultarTexto{
+        visibility: hidden;
+    }
+
+    .descricaoProduto p{
+        line-height: 0.0em;
     }
 }
