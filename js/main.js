@@ -47,6 +47,6 @@ async function onLoad(){
         </div>
             ` 
     });
-}
+} 
 
 onLoad()
