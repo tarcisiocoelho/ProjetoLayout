@@ -64,7 +64,6 @@
                     <div class="formGroup">
                         <button type="submit">Enviar</button>
                     </div>
-
                 </form>
             </div>
         </div>   
@@ -74,33 +73,11 @@
             <fieldset class="textoProdutos"> 
                 <legend>Sua seleção especial</legend>
             </fieldset>
+
                 <div id="elementoProduto" class="boxProdutos">
-                    <div class="boxItens">
-    
-                        <div>
-                            <img src="https://semantic-ui.com/images/wireframe/image.png">
-                        </div>
-    
-                        <div class="descricaoProduto">
-                            <p id="tituloProduto">
-                                Nome do produto
-                            </p>
-                            <p id="ocultarTexto">
-                                Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-                            </p>
-                            <p>
-                                De: R$23,99
-                            </p>
-                            <span>
-                                Por: R$19,99
-                            </span>
-                            <p>
-                                ou 2x de R$9,99
-                            </p>
-                            <button id="botaoComprar" name="botaoComprar">Comprar</button>
-                        </div>              
-                    </div>
+                    
                 </div>
+                
             <div class="botaoCarregarMais">
                 <button name="carregarProdutos" id="carregarProdutos" onclick="onLoad(), countNumero()">Ainda mais produtos aqui!</button>
             </div>
@@ -108,11 +85,37 @@
             <!-- Início do quarto bloco / Formulário e Footer -->
             <fieldset class="textoProdutos"> 
                 <legend>Compartilhe a novidade</legend>
-            </fieldset>  
+            </fieldset> 
+            <div class="boxIndicacao">
+                <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+                <form action="">
+                    <section>
+                        <div class="formGroup">
+                            <label>Nome do seu amigo</label><br>
+                            <input type="text">
+                        </div>
+    
+                        <div class="formGroup">
+                            <label>E-mail</label><br>
+                            <input type="email">
+                        </div>
+                    </section> 
+                    <div class="formGroupButton">
+                        <button type="submit">Enviar agora</button>
+                    </div>
+                </form>  
+            </div><br><br>
         </div>
+
+        <footer class="boxFooter">
+            <div class="boxTextoFooter">
+                <p>
+                    Testando suas habilidades em HTML, CSS e JS.<br><br> Linx Impulse <br><br> 2019
+                </p>
+            </div> 
+        </footer>  
         
     </div>
-
     <script src="./js/main.js"></script>
 </body>
 </html>

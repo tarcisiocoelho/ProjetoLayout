@@ -7,6 +7,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    height: 100%;
+    margin: 0;
+}
+
 /* Aplicando efeito background rotacionado */
 .boxBackground{
    background: gray;
@@ -199,6 +204,66 @@ img{
     border: 1px solid;
     cursor: pointer;
 }
+
+/* Códigos quarto bloco */
+
+.boxIndicacao section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #888888;
+}
+
+.boxIndicacao p{
+    color: #888888;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.boxIndicacao section .formGroup{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxIndicacao section .formGroup input{
+    width: 50vh;
+    height: 25px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 15px;
+    border: 1px solid #707070af;
+}
+
+.boxIndicacao .formGroupButton{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.boxIndicacao .formGroupButton button{
+    padding: 10px;
+    width: 200px;
+    color: #888888;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.boxFooter{
+    background: gray;
+    padding: 50px 0;
+    bottom: 0;
+    transform: skew(0deg, 0deg) translateY(0px);
+    margin: auto;
+    color: white;
+ }
+ 
+ /* Transformando a caixa de texto em sua rotação normal */
+ .boxTextoFooter{
+     transform: skew(0deg, 0.0deg);
+     text-align: center;
+     padding: 15px;
+ }
 
 /* Aplicando responsividade quando a tela atingir a capacidade de 768px */
 
