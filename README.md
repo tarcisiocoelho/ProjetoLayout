@@ -1,5 +1,5 @@
 # Desafio Linx
-<img src="../assets/logo-linx.png">
+![imagem_linx](https://github.com/tarcisiocoelho/ProjetoLayout/blob/main/assets/logo-linx.png)
 
 ---
 
@@ -25,14 +25,14 @@ CSS
 ---
 
 ## Construção do layout proposto:
-<img src="../assets/page.produtos.gif">
+<img src="https://github.com/tarcisiocoelho/ProjetoLayout/blob/main/assets/page-produtos.gif" width="90%">
 
 ## Função do botão *load more* retornando oito produtos:
-<img src="../assets/funcao-botao.gif">
+<img src="https://github.com/tarcisiocoelho/ProjetoLayout/blob/main/assets/funcao-botao.gif" width="90%">
 
 ## Página responsiva: 
 
-<img src="../assets/pagina-responsiva.gif">
+<img src="https://github.com/tarcisiocoelho/ProjetoLayout/blob/main/assets/pagina-responsiva.gif" width="90%">
 
 ---
 
