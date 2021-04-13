@@ -44,18 +44,18 @@
                 </p>
             </div>
             <div class="boxFormulario">
-                <form action="">
+                <form action="#">
                     <div class="formGroup">
                         <label>Seu nome</label><br>
-                        <input type="text">
+                        <input type="text" name="nome" id="nome" required>
                     </div>
                     <div class="formGroup">
                         <label>E-mail</label>
-                        <input type="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="formGroup">
                         <label>CPF</label>
-                        <input type="text">
+                        <input type="text" name="cpf" id="cpf" required>
                     </div>
                     <div class="formGroupRadio">
                         <input type="radio" id="masculino" name="genero" value="Masculino" checked><label>Masculino</label> 
@@ -82,29 +82,32 @@
                 <button name="carregarProdutos" id="carregarProdutos" onclick="onLoad(), countNumero()">Ainda mais produtos aqui!</button>
             </div>
 
-            <!-- Início do quarto bloco / Formulário e Footer -->
+            <!-- * Início do quarto bloco / Formulário e Footer
+                 * Validação dos campos inputs com o required
+            -->
             <fieldset class="textoProdutos"> 
                 <legend>Compartilhe a novidade</legend>
             </fieldset> 
+
             <div class="boxIndicacao">
                 <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
                 <form action="">
                     <section>
                         <div class="formGroup">
-                            <label>Nome do seu amigo</label><br>
-                            <input type="text">
+                            <label>Nome do seu amigo</label>
+                            <input type="text" name="nomeAmigo" id="nomeAmigo" required>
                         </div>
     
                         <div class="formGroup">
-                            <label>E-mail</label><br>
-                            <input type="email">
+                            <label>E-mail</label>
+                            <input type="email" name="emailAmigo" id="emailAmigo" required>
                         </div>
                     </section> 
                     <div class="formGroupButton">
                         <button type="submit">Enviar agora</button>
                     </div>
                 </form>  
-            </div><br><br>
+            </div>
         </div>
 
         <footer class="boxFooter">

@@ -223,10 +223,12 @@ img{
 .boxIndicacao section .formGroup{
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 .boxIndicacao section .formGroup input{
-    width: 50vh;
+    width: 100%;
     height: 25px;
     padding: 15px;
     margin-bottom: 15px;
@@ -285,6 +287,13 @@ img{
         text-align: left;
         padding: 15px;
     }
+
+    .boxIndicacao section .formGroup{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 900px){
@@ -328,6 +337,10 @@ img{
     .boxLinha{
         padding: 0px;
         margin-top: 20px;
+    }
+
+    .boxIndicacao{
+        margin-bottom: 50px;
     }
 }
 
